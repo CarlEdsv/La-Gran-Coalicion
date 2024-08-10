@@ -1,0 +1,183 @@
+
+/* html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    background-image: url(../img/wallpaper.jpg);
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+    .form-signin .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+input[type=text], input[type=password], select, select option {
+    padding: 5px !important;
+    margin: 0px !important;
+    border-radius: 0px
+}
+
+.row
+{
+    padding:0px; margin:0px
+}
+
+.blue-ugb
+{
+    background-color: #011B40 !important
+}
+
+.gray-ugb
+{
+    background-color: #707070 !important
+}
+
+.red-ugb
+{
+    background-color: #FF0000 !important
+}
+
+.light-gray-ugb
+{
+    background-color: #F0F0F0 !important
+} */
+
+/* body{
+    justify-items: center;
+    background-color: rgb(17, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;     
+}   */
+
+html{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: normal;
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    background-image: url(../media/wallpaper.jpg);
+}
+
+
+.container{
+    justify-items: center;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(1, 5fr);
+    gap: 10px;
+    width: 325px;
+    height: 480px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.blue-ugb
+{
+    text-align: center;
+    color: #f5f5f5;
+    height: 45%;
+    width: 80%;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #011b40
+}
+
+.button{
+    color: #f5f5f5;
+    height: 80%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #011b40
+}
+
+
+input[type="text"], input[type= "password"] {
+    padding: 10px;
+    margin: 30px;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+    outline: none;
+    width: 85%;
+}
+
+input[type="text"]:focus {
+    border-bottom-color: blue; /* Cambia el color del borde inferior al enfocar */
+}
+
+input[type="password"]:focus {
+    border-bottom-color: blue; /* Cambia el color del borde inferior al enfocar */
+}
+
+
+.password-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    max-width: 300px; /* Limita el ancho del input */
+}
+
+#password,#text{
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+    background: none;
+    border: none;
+    outline: none;
+}
