@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Empresarial</title>
+    <link rel="stylesheet" href="../css/loginAndRegistroEmpresarial.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="../media/icono.png">
+</head>
+
+<body class="bodyRegistro">
+
+        <form class="containerRegistro" action="">
+
+        <div class="blue-ugb">REGISTRO EMPRESARIAL</div>
+        <img src="../media/logo_azul_vertical.png" alt="">
+
+        <div>Nombre de la empresa</div>
+        <input type="text" class="item" placeholder="Escribe el nombre de la empresa" required>
+
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Cargar Imagen(Logotipo)</label>
+            <input class="form-control" type="file" id="formFile" required>
+          </div>
+          
+          <div></div>
+        <div>Correo electronico</div>
+        <input type="text" class="item" placeholder="Escribe el correo" required>
+
+        <div>Contraseña</div>
+        <input type="password" class="item" id="password-field"  placeholder="Escribe la contraseña" required>
+
+        <div>Dirección</div>
+        <input type="text" class="item" placeholder="Escribe la dirección" required>
+
+        <div>Teléfono</div>
+        <input type="text" class="item" placeholder="Escribe el número de teléfono" required>
+
+        <div>Sector</div>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Escoger Sector</option>
+            <option value="1">Tecnologia de la informacion(IT)</option>
+            <option value="2">Manufactura</option>
+            <option value="3">Salud</option>
+            <option value="4">Construcción</option>
+            <option value="5">Comercio</option>
+            <option value="6">Otro</option>
+        </select>
+
+        <div>Número de Identificación Fisca (NIF)</div>
+        <input type="text" class="item" placeholder="Escribe el NIF" required>
+
+        <div>Número de Registro de Contribuyente(NRC)</div>
+        <input type="text" class="item" placeholder="Escribe el NRC" required>
+
+        <div>Sitio Web(opcional)</div>
+        <input type="text" class="item" placeholder="URL">
+
+        <div>Numero de empleados(opcional)</div>
+        <input type="text" class="item" placeholder="N° de empleados ">
+
+        <div>Descripción (opcional)</div>
+        <input type="text" class="item" placeholder="Descripción">
+
+        <input type="submit" class="button" value="INICIAR SESION" >
+        </form>
+
+        <script src="../js/loginEmpresarial.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
