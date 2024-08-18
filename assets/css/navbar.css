@@ -1,0 +1,35 @@
+.btn-Registrarse {
+    border-color: #011B40;
+    border-radius: 0%;
+    padding: 15px;
+    width: 200px;
+    background-color: #011B40; /* Color de fondo inicial */
+    color: #ffff; /* Color del texto inicial */
+    border: 2px solid #011B40; /* Color del borde inicial */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición de animación */
+}
+
+.btn-Registrarse:hover {
+    background-color: #2BBBAD; /* Color de fondo al pasar el cursor */
+    color: #ffffff; /* Color del texto al pasar el cursor */
+}
+
+.btn-Login {
+    border-color: #011B40;
+    border-radius: 0%;
+    padding: 15px;
+    width: 200px;
+    background-color: #ffffff; /* Color de fondo inicial */
+    color: #011B40; /* Color del texto inicial */
+    border: 2px solid #011B40; /* Color del borde inicial */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición de animación */
+}
+
+.btn-Login:hover {
+    background-color: #2BBBAD; /* Color de fondo al pasar el cursor */
+    color: #ffffff; /* Color del texto al pasar el cursor */
+}
+
+.empleo{
+    width: 200px;
+}
