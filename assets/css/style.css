@@ -5757,6 +5757,7 @@ b,sup,sub,u,del {
     font-family: "Muli",sans-serif
 }
 
+
 @media (max-width: 767px) {
     .slider-area .hero__caption p {
         margin-bottom:30px
