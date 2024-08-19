@@ -1,0 +1,112 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #011b40; /* Fondo azul */
+    color: #f5f5f5; /* Letras blancas */
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #011b40; /* Fondo azul para botón */
+    color: #ffffff; /* Letras blancas */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Filtros */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* Tarjetas de trabajos */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-listing {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    background-color: #f5f5f5; /* Fondo gris claro para tarjetas */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.job-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.job-details {
+    flex: 1;
+}
+
+.job-details h2 {
+    margin-top: 0;
+    color: #011b40; /* Títulos en azul */
+}
+
+.job-details p {
+    margin: 5px 0;
+    color: #333; /* Texto en color gris oscuro para mejor legibilidad */
+}
+
+/* Paginación */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #011b40; /* Fondo azul para botones */
+    color: #ffffff; /* Letras blancas */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:hover {
+    background-color: #003366; /* Color azul más oscuro para hover */
+}
