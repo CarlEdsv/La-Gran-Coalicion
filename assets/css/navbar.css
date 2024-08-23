@@ -1,35 +1,48 @@
+/* Estilos para los botones de la barra de navegación */
 .btn-Registrarse {
     border-color: #011B40;
     border-radius: 0%;
-    padding: 15px;
-    width: 200px;
-    background-color: #011B40; /* Color de fondo inicial */
-    color: #ffff; /* Color del texto inicial */
-    border: 2px solid #011B40; /* Color del borde inicial */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición de animación */
+    padding: 10px;
+    width: 150px;
+    background-color: #011B40;
+    color: #ffff;
+    border: 2px solid #011B40;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-Registrarse:hover {
-    background-color: #2BBBAD; /* Color de fondo al pasar el cursor */
-    color: #ffffff; /* Color del texto al pasar el cursor */
+    background-color: #2BBBAD;
+    color: #ffffff;
 }
 
 .btn-Login {
     border-color: #011B40;
     border-radius: 0%;
-    padding: 15px;
-    width: 200px;
-    background-color: #ffffff; /* Color de fondo inicial */
-    color: #011B40; /* Color del texto inicial */
-    border: 2px solid #011B40; /* Color del borde inicial */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición de animación */
+    padding: 10px;
+    width: 150px;
+    background-color: #ffffff;
+    color: #011B40;
+    border: 2px solid #011B40;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-Login:hover {
-    background-color: #2BBBAD; /* Color de fondo al pasar el cursor */
-    color: #ffffff; /* Color del texto al pasar el cursor */
+    background-color: #2BBBAD;
+    color: #ffffff;
 }
 
-.empleo{
-    width: 200px;
+/* Estilos generales para los enlaces de la navbar */
+.navbar-nav .nav-link {
+    color: black; /* Color del texto inicial */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Estilos cuando el cursor pasa sobre el enlace */
+.navbar-nav .nav-link:hover {
+    color: #2BBBAD; /* Color del texto al pasar el cursor */
+}
+
+/* Estilos específicos para el enlace activo */
+.navbar-nav .nav-link.active {
+    color: #2BBBAD; /* Color para el enlace activo */
 }
