@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="../css/loginEstudiante.css">
+    <script>
+        // Función para mostrar u ocultar la contraseña
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("password");
+            var toggleButton = document.getElementById("togglePassword");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleButton.innerHTML = "Ocultar Contraseña";
+            } else {
+                passwordField.type = "password";
+                toggleButton.innerHTML = "Mostrar Contraseña";
+            }
+        }
+
+        // Función para validar el inicio de sesión
+        function validarLogin(event) {
+            var carnet = document.getElementById("carnet").value;
+            var password = document.getElementById("password").value;
+
+            // Credenciales simuladas
+            var credencialesCorrectas = {
+                "123456": "password123" // Ejemplo: carnet = "123456", password = "password123"
+            };
+
+            if (credencialesCorrectas[carnet] === password) {
+                // Redirigir a la página principal después de un inicio de sesión exitoso
+                window.location.href = "../home.html";
+                return false; // Evita el envío del formulario
+            } else {
+                alert("Carnet o contraseña incorrectos.");
+                event.preventDefault(); // Evita el envío del formulario
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-contenedor">
+        <div class="barra_azul">INICIO DE SESIÓN</div>
+        <img src="../media/logo_azul_vertical.png" alt="Logo UGB" style="display: block; margin: 0 auto;">
+        <form onsubmit="return validarLogin(event)" method="post">
+            <label for="carnet">Carnet Estudiantil:</label>
+            <input type="text" id="carnet" name="carnet" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" id="togglePassword" onclick="togglePasswordVisibility()">Mostrar Contraseña</button>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+</body>
+</html>
