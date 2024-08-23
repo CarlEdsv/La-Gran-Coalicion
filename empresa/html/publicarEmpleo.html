@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicar Empleo</title>
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Select CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="../css/publicarEmpleo.css">
 </head>
 
 <body>
-    <div class="container mt-3 pt-4">
+    <div class="container pt-4">
         <form action="">
             <div class="container mt-5 publicar-empleo">
-                <h2 class="text-center mb-4">Publicar Empleo</h2>
+                <h2 class="text-center mb-4 titulo">Publicar Empleo</h2>
                 <div class="row informacion-empresa">
-                    <div class="col logo-empresa">
-                        <img src="../../assets/img/banner/dog.png" alt="Logo Empresa" class="d-block mb-2"
-                            style="max-width: 150px;">
+                    <div class="col-sm-4 text-center logo-empresa">
+                        <img src="../../assets/img/logo/team-cherry.png" alt="" class="logo">
                     </div>
-                    <div class="col informacion">
+                    <div class="col-sm-8 informacion">
                         <div class="row nombre">
                             <label for="companyName" class="form-label">Nombre de la Empresa</label>
                         </div>
@@ -38,6 +41,7 @@
 
 
             <div class="container publicar-empleo mt-5">
+                <!--FILA 1-->
                 <div class="row">
                     <div class="col">
                         <label for="jobRequirements" class="form-label">Nombre del puesto</label>
@@ -49,6 +53,7 @@
                         <input type="text" class="form-control" id="duration" placeholder="Duración">
                     </div>
                 </div>
+                <!--FILA 2-->
                 <div class="row mt-3">
                     <div class="col">
                         <label for="jobRequirements" class="form-label">Descripción</label>
@@ -61,39 +66,44 @@
                             required>
                     </div>
                 </div>
+                <!--FILA 3-->
                 <div class="row mt-3">
                     <div class="col">
                         <label for="jobRequirements" class="form-label">Requisitos</label>
-                        <textarea class="form-control" id="jobRequirements" rows="4"
+                        <textarea class="form-control" id="jobRequirements" rows="2"
                             placeholder="Requisitos (Habilidades técnicas, blandas, experiencia, etc.)"
                             required></textarea>
                     </div>
                     <div class="col">
-                        <label for="workModality" class="form-label">Modalidad de Trabajo</label>
-                        <select class="form-select" id="workModality" required>
-                            <option selected disabled>Selecciona la Modalidad de Trabajo</option>
+                        <label for="salaryRange" class="form-label">Salario o Rango Salarial (Opcional-$)</label>
+                        <input type="text" class="form-control" id="salaryRange" placeholder="Salario o Rango Salarial">
+                    </div>
+                </div>
+                <!--FILA 4-->
+                <div class="row mt-3">
+                    <div class="col">
+                        <label for="workModality" class="form-label">Modalidad del Empleo</label>
+                        <!--Select Picker de bootstrap (bootstrap Select)-->
+                        <select class="selectpicker" id="workModality" required data-live-search="true">
+                            <option selected disabled>Selecciona la Modalidad del Empleo</option>
                             <option value="on-site">Presencial</option>
                             <option value="remote">Remoto</option>
                             <option value="hybrid">Semipresencial</option>
                         </select>
                     </div>
-                </div>
-                <div class="row mt-3">
                     <div class="col">
-                        <label for="jobType" class="form-label">Tipo de Empleo</label>
-                        <select class="form-select" id="jobType" required>
+                        <!--Select Picker de bootstrap (bootstrap Select)-->
+                        <label for="workType" class="form-label">Tipo de Empleo</label>
+                        <select class="selectpicker" id="workType" required data-live-search="true">
                             <option selected disabled>Selecciona el Tipo de Empleo</option>
-                            <option value="full-time">Tiempo Completo</option>
-                            <option value="part-time">Medio Tiempo</option>
-                            <option value="internship">Pasantía</option>
+                            <option value="fulltime">Tiempo Completo</option>
+                            <option value="halftime">Medio Tiempo</option>
+                            <option value="intership">Pasantía</option>
                             <option value="contract">Contrato</option>
                         </select>
                     </div>
-                    <div class="col">
-                        <label for="salaryRange" class="form-label">Salario o Rango Salarial (Opcional)</label>
-                        <input type="text" class="form-control" id="salaryRange" placeholder="Salario o Rango Salarial">
-                    </div>
                 </div>
+                <!--FILA 5-->
                 <div class="row mt-3">
                     <div class="col">
                         <label for="startDate" class="form-label">Fecha de Inicio</label>
@@ -105,12 +115,13 @@
                             required>
                     </div>
                 </div>
+                <!--FILA 6-->
                 <div class="row mt-3">
-                    <div class="col">
-                        <button type="submit" class="btn btn-primary">Publicar Empleo</button>
+                    <div class="col btncol">
+                        <button type="submit" class="btn borrar">Borrar</button>
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-primary">Publicar Empleo</button>
+                        <button type="submit" class="btn publicar">Publicar Empleo</button>
                     </div>
                 </div>
             </div>
@@ -119,9 +130,13 @@
     </div>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Select JS -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
 </body>
 
 </html>

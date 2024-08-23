@@ -1,4 +1,4 @@
-body{
+body {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -14,18 +14,92 @@ body{
     background-image: url(../media/wallpaper.jpg);
 }
 
-.publicar-empleo{
+.publicar-empleo {
     justify-items: center;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-
+    color: #011b40;
+    border-color: #011b40;
+    max-width: 1000px;
 }
 
-.izquierda{
+.izquierda {
     padding-right: 5%;
 }
 
-.derecha{
+.derecha {
     padding-left: 5%;
+}
+
+.borrar {
+    width: 180px;
+    background-color: #C31A1A;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transición de animación */
+}
+
+.borrar:hover {
+    background-color: #850707;
+    /* Color de fondo al pasar el cursor */
+    color: #ffffff;
+    /* Color del texto al pasar el cursor */
+}
+
+.publicar {
+    width: 180px;
+    background-color: #011b40;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transición de animación */
+}
+
+.publicar:hover {
+    background-color: #011026;
+    /* Color de fondo al pasar el cursor */
+    color: #ffffff;
+    /* Color del texto al pasar el cursor */
+}
+
+
+#contactEmail,
+#contactPhone {
+    max-width: 600px;
+}
+
+.logo {
+    width: 50%;
+    /* La imagen ocupa x% de ancho de la columna */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el espacio disponible sin distorsión */
+    border-radius: 10px;
+    border-color: #011b40;
+}
+
+.titulo {
+    background-color: #011b40;
+    color: white;
+    border-radius: 10px;
+}
+
+.bootstrap-select {
+    background-color: white;
+    color: #011b40;
+}
+
+
+
+.bootstrap-select .dropdown-menu li a:hover {
+    background-color: #2BBBAD !important;
+    /* Color de fondo al pasar el cursor */
+    color: #ffffff !important;
+    /* Color del texto al pasar el cursor */
+}
+
+.bootstrap-select .dropdown-menu li a {
+    color: #011B40;
+    /* Color del texto */
 }
