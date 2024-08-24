@@ -1,19 +1,24 @@
-:root{
- --main-color:blue;
+:root {
+    --body-color: #f5f5f5;
+    --caja-color: white;
+    --azul-color: #011b40;
+    --azul-transition-color: #011026;
+    --aqua-color: #2BBBAD;
+    --aqua-transition-color: #218e83;
 }
 
 body {
-    background-image: url(../media/wallpaper.jpg);
+    background-color: var(--body-color);
 }
 
-.caja{
+.caja {
     justify-items: center;
-    background-color: #f5f5f5;
+    background-color: var(--caja-color);
     padding: 20px;
-    border-radius: 10px;
-    color: #011b40;
-    border-color: #011b40;
-    max-width: 1000px;
+    border-radius: 0px;
+    color: var(--azul-color);
+    border-color: var(--azul-color);
+    max-width: 1200px;
 }
 
 .search-bar {
@@ -24,6 +29,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    width: 600px;
     max-width: 600px;
     margin: 20px auto;
 }
@@ -42,17 +48,15 @@ body {
 .candidate-card {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .candidate-card img {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: #2b3e50;
     margin-bottom: 10px;
 }
 
@@ -65,72 +69,85 @@ body {
 }
 
 .btn-view-more {
-    background-color: #2BBBAD;
+    background-color: var(--aqua-color);
     color: #fff;
+    border-color: black;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-view-more:hover {
+    color: white;
+    background-color: var(--aqua-transition-color);
 }
 
 .btn-tag {
-    background-color: #e0e0e0;
-    color: #000;
+    background-color: var(--azul-color);
+    border-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.btn-tag i {
-    margin-left: 5px;
+.btn-tag:hover {
+    background-color: var(--azul-transition-color);
+    color: white;
+}
+
+.bookmark{
+
 }
 
 /*Ordenar Por*/
 .bootstrap-select {
-    background-color: #f5f5f5;
-    color: #011b40;
+    background-color: var(--body-color);
+    color: var(--azul-color);
 }
 
 .bootstrap-select .dropdown-menu li a {
-    color: #011B40;
-    /* Color del texto */
+    color: var(--azul-color);
 }
 
 .bootstrap-select .dropdown-menu li a:hover {
-    background-color: #2BBBAD !important;
-    /* Color de fondo al pasar el cursor */
+    background-color: var(--aqua-color) !important;
     color: white !important;
-    /* Color del texto al pasar el cursor */
 }
 
 .dropdown-menu strong {
     font-size: 16px;
-    color: #011b40;
+    color: var(--azul-color);
 }
 
 /*Filtrar Por*/
-.menu-filtrado{
-    width:500px;
+.menu-filtrado {
+    width: 500px;
 }
 
 .menu-filtrado input[type="checkbox"] {
-    accent-color: #2BBBAD;
-    cursor:pointer;
+    accent-color: var(--aqua-color);
+    cursor: pointer;
 }
 
-.menu-filtrado label{
-    width:max-content;
+.menu-filtrado label {
+    width: max-content;
 }
 
 /*Ordenar Por (Botón)*/
-.menu3Lineas{
-    background-color:#f5f5f5;
-    color: #011b40;
-    border-color: #f5f5f5;
-    transition: color 0.5s ease; /* Transición suave para el color */
+.menu3Lineas {
+    background-color: var(--caja-color);
+    color: var(--azul-color);
+    border-color: var(--caja-color);
+    transition: color 0.5s ease;
 }
 
-.menu3Lineas:hover{
-    background-color:#f5f5f5;
-    color: #011b40;
-    border-color: #f5f5f5;
+.menu3Lineas:hover {
+    background-color: var(--caja-color);
+    color: var(--azul-color);
+    border-color: var(--caja-color);
 }
 
-.menu3Lineas:focus{
-    background-color:#f5f5f5;
-    color: #011b40;
-    border-color: #f5f5f5;
+.menu3Lineas:focus {
+    background-color: var(--caja-color);
+    color: var(--azul-color);
+    border-color: var(--caja-color);
 }
