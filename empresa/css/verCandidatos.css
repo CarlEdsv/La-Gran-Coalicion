@@ -1,0 +1,136 @@
+:root{
+ --main-color:blue;
+}
+
+body {
+    background-image: url(../media/wallpaper.jpg);
+}
+
+.caja{
+    justify-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    color: #011b40;
+    border-color: #011b40;
+    max-width: 1000px;
+}
+
+.search-bar {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.search-bar input::placeholder {
+    color: #9e9e9e;
+}
+
+.candidate-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.candidate-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2b3e50;
+    margin-bottom: 10px;
+}
+
+.btn-view-more,
+.btn-tag {
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.btn-view-more {
+    background-color: #2BBBAD;
+    color: #fff;
+}
+
+.btn-tag {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.btn-tag i {
+    margin-left: 5px;
+}
+
+/*Ordenar Por*/
+.bootstrap-select {
+    background-color: #f5f5f5;
+    color: #011b40;
+}
+
+.bootstrap-select .dropdown-menu li a {
+    color: #011B40;
+    /* Color del texto */
+}
+
+.bootstrap-select .dropdown-menu li a:hover {
+    background-color: #2BBBAD !important;
+    /* Color de fondo al pasar el cursor */
+    color: white !important;
+    /* Color del texto al pasar el cursor */
+}
+
+.dropdown-menu strong {
+    font-size: 16px;
+    color: #011b40;
+}
+
+/*Filtrar Por*/
+.menu-filtrado{
+    width:500px;
+}
+
+.menu-filtrado input[type="checkbox"] {
+    accent-color: #2BBBAD;
+    cursor:pointer;
+}
+
+.menu-filtrado label{
+    width:max-content;
+}
+
+/*Ordenar Por (Botón)*/
+.menu3Lineas{
+    background-color:#f5f5f5;
+    color: #011b40;
+    border-color: #f5f5f5;
+    transition: color 0.5s ease; /* Transición suave para el color */
+}
+
+.menu3Lineas:hover{
+    background-color:#f5f5f5;
+    color: #011b40;
+    border-color: #f5f5f5;
+}
+
+.menu3Lineas:focus{
+    background-color:#f5f5f5;
+    color: #011b40;
+    border-color: #f5f5f5;
+}

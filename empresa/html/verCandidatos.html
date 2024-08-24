@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Candidatos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Select CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css">
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="../css/verCandidatos.css">
+</head>
+
+<body>
+    <div class="container caja mt-5">
+        <div class="row">
+            <div class="col mt-4 text-end">
+                <!-- Botón de Menú -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle menu3Lineas" type="button" id="menuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        ☰
+                    </button>
+                    <!-- Menú Desplegable -->
+                    <ul class="dropdown-menu menu-filtrado p-4" aria-labelledby="menuButton">
+                        <!--Primer filtro-->
+                        <li>
+                            <!--Opcion 1-3 -->
+                            <div class="row">
+                                <strong>Filtrado 1</strong>
+                                <div class="row mt-2">
+                                    <div class="col"><input type="checkbox" id="opcion1"></div><!--checked-->
+                                    <div class="col"><label for="opcion1">Opción 1</label></div>
+                                    <div class="col"><input type="checkbox" id="opcion2"></div><!--checked-->
+                                    <div class="col"><label for="opcion2">Opción 2</label></div>
+                                    <div class="col"><input type="checkbox" id="opcion3"></div><!--checked-->
+                                    <div class="col"><label for="opcion3">Opción 3</label></div>
+                                </div>
+                            </div>
+                            <!--Opcion 4-6 -->
+                            <div class="row mt-2">
+                                <div class="row">
+                                    <div class="col"><input type="checkbox" id=""></div><!--checked-->
+                                    <div class="col"><label for="">Opción 4</label></div>
+                                    <div class="col"><input type="checkbox" id=""></div><!--checked-->
+                                    <div class="col"><label for="">Opción 5</label></div>
+                                    <div class="col"><input type="checkbox" id=""></div><!--checked-->
+                                    <div class="col"><label for="">Opción 6</label></div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--Segundo filtro-->
+                        <li>
+
+                            <!--Opcion 1-3 -->
+                            <div class="row mt-3">
+                                <strong>Filtrado 2</strong>
+                                <div class="row mt-2">
+                                    <div class="col"><input type="checkbox" id="opcion1"></div><!--checked-->
+                                    <div class="col"><label for="opcion1">Opción 1</label></div>
+                                    <div class="col"><input type="checkbox" id="opcion2"></div><!--checked-->
+                                    <div class="col"><label for="opcion2">Opción 2</label></div>
+                                    <div class="col"><input type="checkbox" id="opcion3"></div><!--checked-->
+                                    <div class="col"><label for="opcion3">Opción 3</label></div>
+                                </div>
+                            </div>
+                            <!--Opcion 4-6 -->
+                            <div class="row mt-2">
+                                <div class="row">
+                                    <div class="col"><input type="checkbox" id=""></div><!--checked-->
+                                    <div class="col"><label for="">Opción 4</label></div>
+                                    <div class="col"><input type="checkbox" id=""></div><!--checked-->
+                                    <div class="col"><label for="">Opción 5</label></div>
+                                    <div class="col"><input type="checkbox" id=""></div><!--checked-->
+                                    <div class="col"><label for="">Opción 6</label></div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--Tercer filtro-->
+                        <li>
+
+                            <!--Opcion 1-3 -->
+                            <div class="row mt-3">
+                                <strong>Filtrado 3</strong>
+                                <div class="row mt-2">
+                                    <div class="col"><input type="checkbox" id="opcion1"></div><!--checked-->
+                                    <div class="col"><label for="opcion1">Opción 1</label></div>
+                                    <div class="col"><input type="checkbox" id="opcion2"></div><!--checked-->
+                                    <div class="col"><label for="opcion2">Opción 2</label></div>
+                                    <div class="col"><input type="checkbox" id="opcion3"></div><!--checked-->
+                                    <div class="col"><label for="opcion3">Opción 3</label></div>
+                                </div>
+                            </div>
+                            <!--Opcion 4-6 -->
+                            <div class="row mt-2">
+                                <div class="row">
+                                    <div class="col"><input type="checkbox" id=""></div><!--checked-->
+                                    <div class="col"><label for="">Opción 4</label></div>
+                                    <div class="col"><input type="checkbox" id=""></div><!--checked-->
+                                    <div class="col"><label for="">Opción 5</label></div>
+                                    <div class="col"><input type="checkbox" id=""></div><!--checked-->
+                                    <div class="col"><label for="">Opción 6</label></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <!-- Search Bar -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="search-bar">
+                        <i class="bi bi-list"></i>
+                        <input type="text" placeholder="Hinted search text">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+            </div>
+            <!--Ordenar Por-->
+            <div class="col mt-4 text-end">
+                <label for="orderBy" class="form-label">Ordenar Por</label>
+            </div>
+            <div class="col mt-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <select class="selectpicker" id="orderBy" required data-live-search="true">
+                        <option selected disabled>Ordenar Por</option>
+                        <option value="on-site">Más Reciente</option>
+                        <option value="remote">Más Antiguo</option>
+                        <option value="hybrid">Nombre (A-Z)</option>
+                        <option value="hybrid">Edad (M-m)</option>
+                        <option value="hybrid">Edad (m-M)</option>
+                        <option value="hybrid">CUM</option>
+                        <option value="hybrid">Etiqueta 1</option>
+                        <option value="hybrid">Etiqueta 2</option>
+                        <option value="hybrid">Etiqueta 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Job Title and Description -->
+            <div class="mt-4">
+                <h2>Título del puesto</h2>
+                <p>Descripción del puesto Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum, magna
+                    eget
+                    vehicula tincidunt, odio purus ultricies lacus, quis pellentesque lacus justo at ipsum. Aenean
+                    bibendum
+                    magna in consequat ultricies.</p>
+            </div>
+        </div>
+        <!-- Candidates Cards -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="candidate-card">
+                    <img src="https://via.placeholder.com/50" alt="Candidate Photo">
+                    <h5>Nombre de Candidato</h5>
+                    <p>EDAD: 20<br>CUM: 9.1<br>ESTADO ACADÉMICO: ACTIVO</p>
+                    <button class="btn btn-view-more">VER MÁS</button>
+                    <button class="btn btn-tag">ETIQUETA <i class="bi bi-plus"></i></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="candidate-card">
+                    <img src="https://via.placeholder.com/50" alt="Candidate Photo">
+                    <h5>Nombre de Candidato</h5>
+                    <p>EDAD: 27<br>CUM: 9.5<br>ESTADO ACADÉMICO: EGRESADO</p>
+                    <button class="btn btn-view-more">VER MÁS</button>
+                    <button class="btn btn-tag">ETIQUETA <i class="bi bi-plus"></i></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="candidate-card">
+                    <img src="https://via.placeholder.com/50" alt="Candidate Photo">
+                    <h5>Nombre de Candidato</h5>
+                    <p>EDAD: 19<br>CUM: 7.9<br>ESTADO ACADÉMICO: RETIRADO</p>
+                    <button class="btn btn-view-more">VER MÁS</button>
+                    <button class="btn btn-tag">ETIQUETA <i class="bi bi-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Select JS -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+</body>
+</html>
