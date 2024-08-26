@@ -9,6 +9,8 @@
     <!-- Bootstrap Select CSS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css">
+    <!-- Boostrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!--Hoja de estilos-->
     <link rel="stylesheet" href="../css/verCandidatos.css">
 </head>
@@ -157,9 +159,13 @@
                     <img src="../media/user.png" alt="Candidate Photo">
                     <h5>Nombre de Candidato</h5>
                     <p>EDAD: 20<br>CUM: 9.1<br>ESTADO ACADÉMICO: ACTIVO</p>
-                    <button class="btn btn-view-more">VER MÁS</button>
-                    <button class="btn btn-tag">AÑADIR ETIQUETA</button>
-                    <img src="../media/gray-bookmark.png" class="bookmark" width="5px" height="0px">
+                    <div class="button-group">
+                        <button class="btn btn-view-more">VER MÁS</button>
+                        <button class="btn btn-tag">AÑADIR ETIQUETA</button>
+                        <button class="bookmark-btn" id="bookmarkButton">
+                            <i class="bi bi-bookmark"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
@@ -182,6 +188,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/verCandidatos.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap JS -->
@@ -190,4 +197,5 @@
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
 </body>
+
 </html>
