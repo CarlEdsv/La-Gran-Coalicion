@@ -1,6 +1,9 @@
-const bookmarkButton = document.getElementById('bookmarkButton');
-bookmarkButton.onclick = function() {
-    bookmarkButton.classList.toggle('active');
-    bookmarkButton.querySelector('i').classList.toggle('bi-bookmark-fill');
-    bookmarkButton.querySelector('i').classList.toggle('bi-bookmark');
-};
+const bookmarkButtons = document.querySelectorAll('.bookmark-btn');
+
+bookmarkButtons.forEach(function(button) {
+    button.onclick = function() {
+        button.classList.toggle('active');
+        button.querySelector('i').classList.toggle('bi-bookmark-fill');
+        button.querySelector('i').classList.toggle('bi-bookmark');
+    };
+});
