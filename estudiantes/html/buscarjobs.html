@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Trabajo</title>
+    <link rel="stylesheet" href="../css/buscarjobs.css"> <!-- Ruta correcta al CSS -->
+</head>
+<body>
+    <header>
+        <h1>Buscar Empleo</h1>
+        <input type="text" id="search-input" placeholder="Buscar por palabras clave...">
+        <button id="search-button">Buscar</button>
+    </header>
+
+    <section id="filters">
+        <select id="job-type">
+            <option value="">Tipo de empleo</option>
+            <option value="full-time">Tiempo Completo</option>
+            <option value="part-time">Medio Tiempo</option>
+        </select>
+        <input type="text" id="location" placeholder="Ubicación...">
+        <input type="date" id="date-posted">
+        <select id="sort-by">
+            <option value="date-desc">Más reciente</option>
+            <option value="date-asc">Más antiguo</option>
+            <option value="title-asc">Título A-Z</option>
+            <option value="title-desc">Título Z-A</option>
+        </select>
+    </section>
+
+    <section id="results-container">
+        <!-- Aquí se mostrarán los resultados de los trabajos -->
+    </section>
+
+    <script src="../js/buscarjobs.js"></script> <!-- Ruta correcta al JavaScript -->
+</body>
+</html>
