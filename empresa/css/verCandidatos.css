@@ -8,6 +8,11 @@
     --aqua-transition-color: #218e83;
 }
 
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-color: var(--body-color);
 }
@@ -187,4 +192,72 @@ body {
     background-color: var(--caja-color);
     color: var(--azul-color);
     border-color: var(--caja-color);
+}
+
+/* Estilos para los botones de la barra de navegación */
+.btn-Registrarse {
+    border-color: #011B40;
+    border-radius: 0%;
+    padding: 10px;
+    width: 150px;
+    background-color: #011B40;
+    color: #ffff;
+    border: 2px solid #011B40;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-Registrarse:hover {
+    background-color: #2BBBAD;
+    color: #ffffff;
+}
+
+.btn-Login {
+    border-color: #011B40;
+    border-radius: 0%;
+    padding: 10px;
+    width: 150px;
+    background-color: #ffffff;
+    color: #011B40;
+    border: 2px solid #011B40;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-Login:hover {
+    background-color: #2BBBAD;
+    color: #ffffff;
+}
+
+/* Estilos generales para los enlaces de la navbar */
+.navbar-nav .nav-link {
+    color: black; /* Color del texto inicial */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Estilos cuando el cursor pasa sobre el enlace */
+.navbar-nav .nav-link:hover {
+    color: #2BBBAD; /* Color del texto al pasar el cursor */
+}
+
+/* Estilos específicos para el enlace activo */
+.navbar-nav .nav-link.active {
+    color: #2BBBAD; /* Color para el enlace activo */
+}
+
+/* Footer */
+.footer-area{
+    background-color: #010B1D;
+    color: white;
+}
+
+.footer-area p{
+    color:#868A94;
+}
+
+.footer-area ul li a{
+    color: #868A94;
+}
+
+.footer-area ul li a:hover{
+    color: #2BBBAD;
+    padding-left: 5px
 }

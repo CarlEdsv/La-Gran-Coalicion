@@ -46,3 +46,22 @@
 .navbar-nav .nav-link.active {
     color: #2BBBAD; /* Color para el enlace activo */
 }
+
+/* Footer */
+.footer-area{
+    background-color: #010B1D;
+    color: white;
+}
+
+.footer-area p{
+    color:#868A94;
+}
+
+.footer-area ul li a{
+    color: #868A94;
+}
+
+.footer-area ul li a:hover{
+    color: #2BBBAD;
+    padding-left: 5px
+}

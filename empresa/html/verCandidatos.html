@@ -16,6 +16,57 @@
 
 </head>
 
+<!-- Header Navbar -->
+<header>
+
+    <!-- Barra de navegación con estilos de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo de la página que enlaza al inicio -->
+            <a class="navbar-brand" href="#">
+                <img src="../../assets/img/logo/logo_navbar.png" alt="Logo" width="100">
+            </a>
+
+            <!-- Botón de alternancia para la vista móvil -->
+            <!-- Este botón se muestra en dispositivos móviles y colapsa/expande el menú de navegación -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Icono del botón de alternancia -->
+            </button>
+
+            <!-- Enlaces de navegación que se colapsan en vistas móviles y se centran en la vista de escritorio -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Elementos de navegación -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" id="Inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="empleo">Empleos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="acercaDe">Acerca De</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botones de "Registrarse" y "Login" alineados a la derecha utilizando Flexbox -->
+            <!-- Estos botones permanecen visibles en todas las vistas y están alineados a la derecha -->
+            <div class="d-flex">
+                <a href="#" class="btn btn-Registrarse me-2">Registrarse</a> <!-- Botón de Registrarse -->
+                <a href="#" class="btn btn-Login">Login</a> <!-- Botón de Login -->
+            </div>
+        </div>
+    </nav>
+
+</header>
+
 <body>
     <div class="container caja mt-5">
         <div class="row">
@@ -209,4 +260,42 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
 </body>
 
+<!-- Footer -->
+<footer class="container-fluid footer-area row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+        <a href="index.html"><img src="../../assets/img/logo/logo2_footer.png" alt=""></a>
+    </div>
+
+    <div class="col mb-3">
+    </div>
+
+    <div class="col mb-3">
+        <h5>SOBRE NOSOTROS</h5>
+        <p>Somos un portal de empleos <br>
+            que se adapta a los cambios<br>
+            e innova constantemente<br>
+            para responder a las<br>
+            necesidades actuales y futuras<br>
+            de la sociedad.</p>
+    </div>
+
+    <div class="col mb-3">
+        <h5>CONTÁCTENOS</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Telefono : (503) 2645 6500</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Numero Fijo : 800-7026</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">WhatsApp : (503) 2645 6500</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Email : consultas@ugb.edu.sv</a></li>
+        </ul>
+    </div>
+
+    <div class="col mb-3">
+        <h5>VISITA TAMBIÉN</h5>
+        <ul class="nav flex-column">
+            <li><a href="https://ugb.edu.sv/" class="nav-link p-0">UGB sitio ofical</a></li>
+            <li><a href="https://estudiantes.ugb.edu.sv/Login?ReturnUrl=%2F" class="nav-link p-0">Portal estudiantes</a></li>
+            <li><a href="https://ugb.instructure.com/login/canvas" class="nav-link p-0">Canvas UGB</a></li>
+        </ul>
+    </div>
+</footer>
 </html>
