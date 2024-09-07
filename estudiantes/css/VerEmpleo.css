@@ -37,7 +37,8 @@ body {
     display: block;
     color: #1C20D1;
     text-align: center;
-    padding: 40px 20px; /* Ajusta esto si necesitas reducir el espacio vertical */
+    padding: 40px 20px;
+    /* Ajusta esto si necesitas reducir el espacio vertical */
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -99,14 +100,17 @@ body {
 .banner {
     width: 100%;
     text-align: center;
-    margin: 20px 0; /* Ajusta el margen superior e inferior según prefieras */
+    margin: 20px 0;
+    /* Ajusta el margen superior e inferior según prefieras */
 }
 
 .banner-image {
     width: 100%;
     height: auto;
-    max-height: 550px; /* Ajusta la altura máxima del banner según prefieras */
-    object-fit: cover; /* Asegura que la imagen cubra todo el espacio del banner */
+    max-height: 550px;
+    /* Ajusta la altura máxima del banner según prefieras */
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el espacio del banner */
 }
 
 
@@ -131,19 +135,22 @@ body {
 }
 
 /* Contenido izquierdo (detalles del empleo y descripción) */
-.col-xl-7, .col-lg-8 {
+.col-xl-7,
+.col-lg-8 {
     flex: 0 0 65%;
     max-width: 65%;
 }
 
 /* Contenido derecho (Job Overview y Company Information) */
-.col-xl-4, .col-lg-4 {
+.col-xl-4,
+.col-lg-4 {
     flex: 0 0 30%;
     max-width: 30%;
 }
 
 /* Estilos para los bloques de información a la derecha */
-.post-details3, .post-details4 {
+.post-details3,
+.post-details4 {
     margin-bottom: 20px;
     background-color: #fff;
     padding: 20px;
@@ -209,7 +216,8 @@ body {
     margin-bottom: 50px;
 }
 
-.post-details1, .post-details2 {
+.post-details1,
+.post-details2 {
     margin-bottom: 50px;
 }
 
@@ -220,7 +228,9 @@ body {
     font-weight: 600;
 }
 
-.post-details2 ul, .post-details3 ul, .post-details4 ul {
+.post-details2 ul,
+.post-details3 ul,
+.post-details4 ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -228,12 +238,15 @@ body {
     color: #555;
 }
 
-.post-details2 ul li, .post-details3 ul li, .post-details4 ul li {
+.post-details2 ul li,
+.post-details3 ul li,
+.post-details4 ul li {
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-.post-details3 ul li span, .post-details4 ul li span {
+.post-details3 ul li span,
+.post-details4 ul li span {
     font-weight: 600;
     color: #333;
 }
@@ -264,4 +277,82 @@ body {
 .post-details4 ul li span {
     font-weight: 600;
     color: #333;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Estilos para los botones de la barra de navegación */
+.btn-Registrarse {
+    border-color: #011B40;
+    border-radius: 0%;
+    padding: 10px;
+    width: 150px;
+    background-color: #011B40;
+    color: #ffff;
+    border: 2px solid #011B40;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-Registrarse:hover {
+    background-color: #2BBBAD;
+    color: #ffffff;
+}
+
+.btn-Login {
+    border-color: #011B40;
+    border-radius: 0%;
+    padding: 10px;
+    width: 150px;
+    background-color: #ffffff;
+    color: #011B40;
+    border: 2px solid #011B40;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-Login:hover {
+    background-color: #2BBBAD;
+    color: #ffffff;
+}
+
+/* Estilos generales para los enlaces de la navbar */
+.navbar-nav .nav-link {
+    color: black;
+    /* Color del texto inicial */
+    transition: color 0.3s ease;
+    /* Transición suave para el color */
+}
+
+/* Estilos cuando el cursor pasa sobre el enlace */
+.navbar-nav .nav-link:hover {
+    color: #2BBBAD;
+    /* Color del texto al pasar el cursor */
+}
+
+/* Estilos específicos para el enlace activo */
+.navbar-nav .nav-link.active {
+    color: #2BBBAD;
+    /* Color para el enlace activo */
+}
+
+/* Footer */
+.footer-area {
+    background-color: #010B1D;
+    color: white;
+}
+
+.footer-area p {
+    color: #868A94;
+}
+
+.footer-area ul li a {
+    color: #868A94;
+}
+
+.footer-area ul li a:hover {
+    color: #2BBBAD;
+    padding-left: 5px
 }
