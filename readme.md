@@ -2,7 +2,7 @@
 
 ## Requisitos previos
 
-- **Node.js** v22.8.0 o superior instalado en tu máquina. [Descargar Node.js](https://nodejs.org/)
+- **Node.js** v22.8.0 o superior instalado en tu máquina. [Descargar Node.js]([https://nodejs.org/](https://nodejs.org/en/download/package-manager))
 
 ## Configuración de permisos de ejecución de scripts (solo para Windows)
 
