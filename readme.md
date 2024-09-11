@@ -12,6 +12,7 @@ Es necesario habilitar la ejecución de scripts remotos para evitar restriccione
 2. Ejecuta el siguiente comando para permitir la ejecución de scripts remotos:
    ```powershell
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+   ```
 
 3. Cuando se te pregunte, presiona "S" y luego Enter.
 
@@ -25,12 +26,14 @@ Es necesario habilitar la ejecución de scripts remotos para evitar restriccione
 npm install express
 npm install -g nodemon
 npm install firebase
+```
 
-##Ejecución del proyecto
+## Ejecución del proyecto
 Para iniciar el proyecto con nodemon (que permite la recarga automática al detectar cambios en el código), ejecuta el siguiente comando:
 
 ```bash
 nodemon server.js
+```
 
 
 
