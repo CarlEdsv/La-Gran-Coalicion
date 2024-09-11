@@ -1,8 +1,23 @@
-Thank you for using our template!
+Requisitos de instalacion:
+- node.js v22.8.0
 
-For more awesome templates please visit https://colorlib.com/wp/templates/
+tener habilitado la ejecucion de scripts remotos en las politicas de ejecucion de scripts:
+abrir PowerShell como administrador y pegar el siguiente comando:
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Presionar " S " y enter
 
-Copyright information for the template can't be altered/removed unless you purchase a license.
-More information about the license is available here: https://colorlib.com/wp/licence/
+ahora irse al repositorio en VisualStudio y abrir un terminal y escribir y instalar los siquientes:
 
-Removing copyright information without the license will result in suspension of your hosting and/or domain name(s).
+npm install express
+
+npm install -g nodemon
+
+npm install firebase
+
+
+
+
+
+
+
+
