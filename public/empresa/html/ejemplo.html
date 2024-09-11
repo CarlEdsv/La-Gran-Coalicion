@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Firestore</title>
+</head>
+<body>
+
+  <h1>CRUD con Firebase Firestore</h1>
+
+  <!-- Formulario para agregar o actualizar un usuario -->
+  <form id="userForm">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Guardar Usuario</button>
+  </form>
+
+  <!-- Botón para leer todos los usuarios -->
+  <button id="readUsers">Leer Usuarios</button>
+
+  <!-- Lista para mostrar los usuarios -->
+  <ul id="userList"></ul>
+
+  <!-- Scripts -->
+  <script type="module" src="/firebase/firebase.js"></script>
+</body>
+</html>

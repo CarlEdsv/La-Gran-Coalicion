@@ -3,15 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Empresarial</title>
-    <link rel="stylesheet" href="../css/loginAndRegistroEmpresarial.css">
-    <link rel="icon" href="../media/icono.png">
+    <link rel="stylesheet" href="/empresa/css/loginAndRegistroEmpresarial.css">
+    <link rel="icon" href="/empresa/media/icono.png">
     
 </head>
 
 <body class="bodyLogin">
         <form class="container" action="">
         <div class="blue-ugb">Portal de Empresas</div>
-        <img src="../media/logo_azul_vertical.png" alt="">
+        <img src="/empresa/media/logo_azul_vertical.png" alt="">
         <input type="text" class="item" placeholder="Carnet Empresarial" required autocomplete="on">
 
         <input type="password" class="item" id="password-field"  placeholder="Contraseña" required autocomplete="on">
@@ -19,6 +19,8 @@
         <input type="submit" class="button" value="INICIAR SESION" >
         </form>
 
-        <script src="../js/loginEmpresarial.js"></script>
+        <script src="/empresa/js/loginEmpresarial.js"></script>
+        <script type="module" src="/firebase/firebase.js"></script>
+          
 </body>
 </html>
